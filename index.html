@@ -50,7 +50,7 @@
     <div class="carousel w-full">
       <!-- slider 1 -->
       <div id="slide1" class="carousel-item relative w-full">
-        <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+        <div class="hero min-h-fit	" style="background-image: url(images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -117,6 +117,29 @@
         </div>
       </div>
     </div>
+    <!-- Bonus Section -->
+    <div class="bonus-container max-w-6xl	bg-slate-200 flex justify-evenly	rounded-lg	">
+      <div class="text-center">
+        <img src="images/fruit1.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class="text-center">
+        <img src="images/fruit2.png" alt="">
+        <p>Orange</p>
+      </div>
+      <div class="text-center">
+        <img src="images/fruit3.png" alt="">
+        <p>Mango</p>
+      </div>
+      <div class="text-center">
+        <img src="images/fruit4.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div class="text-center">
+        <img src="images/fruit5.png" alt="">
+        <p>Mango</p>
+      </div>
+    </div>
   </header>
   <main class="md:container md:mx-auto">
     <!-- deal of the day -->
@@ -132,19 +155,19 @@
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:15;"></span>
+                <span style="--value:15;"></span>:
               </span>
               days
             </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:10;"></span>
+                <span style="--value:10;"></span>:
               </span>
               hours
             </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:24;"></span>
+                <span style="--value:24;"></span>:
               </span>
               min
             </div>
@@ -182,10 +205,41 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions mt-5 justify-center">
-              <h4 class="text-xl font-semibold text-[#F85559]">Details</h4>
+              <button class="text-xl font-semibold text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
             </div>
           </div>
         </div>
+        <!--first Modal You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+            <div class="card-body">
+              <div class="flex justify-center items-center">
+                <img class="w-52 h-27" src="images/fruit6.png" alt="">
+              </div>
+              <h3 class="font-bold text-center text-lg">Apple</h3>
+              <p class="py-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus <br>
+                asperiores deleniti quia earum eligendi dolorum.</p>
+              <div class="rating rating-lg rating-half justify-center">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="modal-action justify-center">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </form>
+        </dialog>
         <!-- second details -->
         <div class="card bg-base-100 p-25 border border-gray-200">
           <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
@@ -207,10 +261,42 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions mt-5 justify-center">
-              <h4 class="text-xl font-semibold text-[#F85559]">Details</h4>
+              <button class="text-xl font-semibold text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
             </div>
           </div>
         </div>
+
+        <!--second modal You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_5" class="modal">
+          <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+            <div class="card-body">
+              <div class="flex justify-center items-center">
+                <img class="w-60 h-27" src="images/fruit7.png" alt="">
+              </div>
+              <h3 class="font-bold text-center text-lg">Orange</h3>
+              <p class="py-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus <br>
+                asperiores deleniti quia earum eligendi dolorum.</p>
+              <div class="rating rating-lg rating-half justify-center">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="modal-action justify-center">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </form>
+        </dialog>
         <!-- third details -->
         <div class="card bg-base-100 p-25 border border-gray-200">
           <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
@@ -232,10 +318,41 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions mt-5 justify-center">
-              <h4 class="text-xl font-semibold text-[#F85559]">Details</h4>
+              <button class="text-xl font-semibold text-[#F85559]" onclick="my_modal_6.showModal()">Details</button>
             </div>
           </div>
         </div>
+        <!--third modal You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_6" class="modal">
+          <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+            <div class="card-body">
+              <div class="flex justify-center items-center">
+                <img class="w-60 h-27" src="images/fruit8.png" alt="">
+              </div>
+              <h3 class="font-bold text-center text-lg">Red Dragon</h3>
+              <p class="py-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus <br>
+                asperiores deleniti quia earum eligendi dolorum.</p>
+              <div class="rating rating-lg rating-half justify-center">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="modal-action justify-center">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </form>
+        </dialog>
         <!-- forth details -->
         <div class="card bg-base-100 p-25 border border-gray-200">
           <figure><img src="/images/fruit9.png" alt="Shoes" /></figure>
@@ -257,11 +374,42 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
             <div class="card-actions mt-5 justify-center">
-              <h4 class="text-xl font-semibold text-[#F85559]">Details</h4>
+              <button class="text-xl font-semibold text-[#F85559]" onclick="my_modal_7.showModal()">Details</button>
             </div>
           </div>
         </div>
       </div>
+      <!--forth modal You can open the modal using ID.showModal() method -->
+      <dialog id="my_modal_7" class="modal">
+        <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+          <div class="card-body">
+            <div class="flex justify-center items-center">
+              <img class="w-60 h-27" src="images/fruit9.png" alt="">
+            </div>
+            <h3 class="font-bold text-center text-lg">Banana</h3>
+            <p class="py-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus <br>
+              asperiores deleniti quia earum eligendi dolorum.</p>
+            <div class="rating rating-lg rating-half justify-center">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+            </div>
+            <div class="modal-action justify-center">
+              <!-- if there is a button, it will close the modal -->
+              <button class="btn">Close</button>
+              <button class="btn">Buy Now</button>
+            </div>
+          </div>
+        </form>
+      </dialog>
     </section>
     <!-- shop all button -->
     <div class="text-center ">
@@ -269,7 +417,7 @@
     </div>
     <!-- team section -->
     <section>
-      <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+      <div class="hero" style="background-image: url(images/banner1.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
@@ -277,44 +425,44 @@
             <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               Latin literature from 45 BC, making it over 2000 years old.</p>
 
-            <div class="grid justify-center p-10 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div class="md:flex justify-around p-10 gap-32">
               <!-- 1st team member -->
-              <div class="card w-72 bg-auto shadow-xl">
+              <div class="card bg-auto ">
                 <figure><img src="/images//member1.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title justify-center">Awlad Hossain</h2>
                   <p>Fruits Expert</p>
-                  <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                  <p class="space-x-2"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
               <!-- 1st team member -->
-              <div class="card w-72 bg-auto shadow-xl">
+              <div class="card bg-auto ">
                 <figure><img src="/images//member2.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title justify-center">Awlad Hossain</h2>
+                  <h2 class="card-title justify-center">Safia Chowdhury</h2>
                   <p>Fruits Expert</p>
-                  <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                  <p class="space-x-2"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
               <!-- 1st team member -->
-              <div class="card w-72 bg-auto shadow-xl">
-                <figure><img src="/images//member3.png" alt="Shoes" /></figure>
+              <div class="card bg-auto ">
+                <figure><img  src="/images//member3.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title justify-center">Awlad Hossain</h2>
+                  <h2 class="card-title justify-center">Rokib Hossain</h2>
                   <p>Fruits Expert</p>
-                  <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                  <p class="space-x-2"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
               <!-- 1st team member -->
-              <div class="card w-72 bg-auto shadow-xl">
+              <div class="card bg-auto ">
                 <figure><img src="/images//member4.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title justify-center">Awlad Hossain</h2>
+                  <h2 class="card-title justify-center">Chaity</h2>
                   <p>Fruits Expert</p>
-                  <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                  <p class="space-x-2"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
@@ -366,7 +514,7 @@
         <!-- right column -->
         <div class="text-right">
           <div class="flex items-center gap-5 mb-12">
-            
+
             <div>
               <h3 class="text-2xl font-semibold">Integrated Supplier</h3>
               <hr class="my-3">
@@ -375,7 +523,7 @@
             <span> <i class="fa-solid fa-people-group"></i></span>
           </div>
           <div class="flex items-center gap-5 mb-12">
-            
+
             <div>
               <h3 class="text-2xl font-semibold">Sustainable Practice</h3>
               <hr class="my-3">
@@ -384,7 +532,7 @@
             <span> <i class="fa-solid fa-people-group"></i></span>
           </div>
           <div class="flex items-center gap-5">
-            
+
             <div>
               <h3 class="text-2xl font-semibold">The Benefits Only</h3>
               <hr class="my-3">
@@ -406,24 +554,24 @@
         </h3>
       </div>
       <div class="grid md:grid-flow-col gap-4 text-white">
-        <a class="link link-hover">Home</a> 
-        <a class="link link-hover">About us</a> 
-        <a class="link link-hover">Shop</a> 
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Shop</a>
         <a class="link link-hover">All Fruits</a>
         <a class="link link-hover">Support</a>
         <a class="link link-hover">My Account</a>
-      </div> 
+      </div>
       <div>
         <div class="grid grid-flow-col gap-4 text-white text-3xl">
-          <a><i class="fa-brands fa-twitter"></i></a> 
+          <a><i class="fa-brands fa-twitter"></i></a>
           <a><i class="fa-brands fa-facebook"></i></a>
           <a><i class="fa-brands fa-youtube"></i></a>
           <a><i class="fa-brands fa-linkedin"></i></a>
           <a><i class="fa-brands fa-instagram"></i></a>
           <a><i class="fa-brands fa-apple"></i></a>
         </div>
-      </div> 
-      
+      </div>
+
     </footer>
   </footer>
 </body>

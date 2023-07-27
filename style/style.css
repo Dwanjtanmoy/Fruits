@@ -1,0 +1,7 @@
+.bonus-container{
+    margin: 0 auto;
+    min-height: 70px;
+    border: 1px solid grey;
+    position: relative;
+    margin-top: -5%;
+}
