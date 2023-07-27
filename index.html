@@ -42,7 +42,7 @@
   <header class="md:container md:mx-auto">
     <!-- navbar start from here -->
     <nav>
-      <div class="navbar bg-red-500 rounded-full mb-12">
+      <div class="navbar bg-red-500 rounded-full mb-16 mt-10">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -53,7 +53,10 @@
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruit</a></li>
-              <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <form class="relative">
+                <input type="text" placeholder="Search Here" class="input block input-bordered rounded-3xl w-24 md:w-auto"/>
+              <button class="absolute inset-y-0 end-0	px-5	" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>   
             </ul>
             <div class="hidden lg:flex">
               <ul class="text-white font-semibold menu menu-horizontal px-1">
@@ -67,13 +70,14 @@
         </div>
         <div class="navbar-center gap-3">
           <img src="images/logo.png" alt="">
-          <h3 class="text-white text-4xl font-extrabold">Fruit Burst</h3>
+          <h3 class="text-white text-4xl font-bold">Fruit Burst</h3>
         </div>
        
         <div class="navbar-end hidden md:hidden lg:flex">
-          <input type="text" placeholder="Search Here" class="input input-bordered rounded-3xl w-24 md:w-auto "  />
-          <span class="text-right"><i class="fa-solid fa-magnifying-glass"></i></span>
-              
+          <form class="relative">
+            <input type="text" placeholder="Search Here" class="input block input-bordered rounded-3xl w-24 md:w-auto"/>
+          <button class="absolute inset-y-0 end-0	px-5	" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>      
         </div>
       </div>
     </nav>
@@ -85,13 +89,13 @@
     <div class="carousel w-full">
       <!-- slider 1 -->
       <div id="slide1" class="carousel-item relative w-full">
-        <div class="hero min-h-fit	" style="background-image: url(images/banner1.png);">
+        <div class="hero" style="background-image: url(images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-              <p class="mb-5">We supply highly quality organic products</p>
-              <button class="btn bg-fruit-primary text-white">Shop Now</button>
+              <h1 class="mb-6 text-[#FFF] text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+              <p class="mb-6">We supply highly quality organic products</p>
+              <button class="btn font-bold bg-fruit-primary text-[#FFF]">Shop Now</button>
             </div>
           </div>
         </div>
@@ -457,12 +461,12 @@
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
             <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            <p class="mb-5 text-gray-50">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               Latin literature from 45 BC, making it over 2000 years old.</p>
 
             <div class="md:flex justify-around p-10 gap-32">
               <!-- 1st team member -->
-              <div class="card bg-auto ">
+              <div class="card bg-auto">
                 <figure><img src="./images//member1.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title justify-center">Awlad Hossain</h2>
@@ -471,7 +475,7 @@
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
-              <!-- 1st team member -->
+              <!-- 2nd team member -->
               <div class="card bg-auto ">
                 <figure><img src="./images//member2.png" alt="Shoes" /></figure>
                 <div class="card-body">
@@ -481,8 +485,8 @@
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
-              <!-- 1st team member -->
-              <div class="card bg-auto ">
+              <!-- 3rd team member -->
+              <div class="card bg-auto  ">
                 <figure><img  src="./images//member3.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title justify-center">Rokib Hossain</h2>
@@ -491,13 +495,13 @@
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
-              <!-- 1st team member -->
+              <!-- 4th team member -->
               <div class="card bg-auto ">
                 <figure><img src="./images//member4.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title justify-center">Chaity</h2>
+                  <h2 class="card-title justify-center">Chaity Saha</h2>
                   <p>Fruits Expert</p>
-                  <p class="space-x-2"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                  <p class="space-x-2 md:space-x-0 "><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                       class="fa-brands fa-linkedin"></i></p>
                 </div>
               </div>
